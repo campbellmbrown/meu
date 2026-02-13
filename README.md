@@ -29,7 +29,30 @@ uv tool update meu
 
 ## Usage
 
-*TODO*
+### `scan`
+
+Scan for pattern matches in files using either a single file or files in a directory.
+
+To scan a single file:
+
+```bash
+meu scan --file <FILE> --pattern <PATTERN> [--first-match]
+```
+
+* `--file <FILE>`: The file to scan
+* `--pattern <PATTERN>`: The pattern to search for (supports regular expressions)
+* `--first-match`: Stop on first match in the file
+
+To scan files in a directory:
+
+```bash
+meu scan --dir <DIR> --pattern <PATTERN> [--glob <GLOB>] [--first-match]
+```
+
+* `--dir <DIR>`: The directory to scan
+* `--pattern <PATTERN>`: The pattern to search for (supports regular expressions)
+* `--glob <GLOB>`: The glob pattern to match files (e.g. `**/*.txt`). Default is `*`
+* `--first-match`: Stop on first match in any file
 
 ## Contributing
 
