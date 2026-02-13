@@ -4,6 +4,11 @@ build-backend = "maturin"
 
 [project]
 name = "meu"
+description = "A Rust-powered set of convenient command-line tools for everyday tasks."
+authors = [{ name = "Campbell Brown", email = "campbellbrown093@gmail.com" }]
+readme = "README.md"
+license-files = ["LICENSE"]
+keywords = ["rust", "ssh"]
 requires-python = ">=3.8"
 classifiers = [
     "Programming Language :: Rust",
@@ -11,5 +16,8 @@ classifiers = [
     "Programming Language :: Python :: Implementation :: PyPy",
 ]
 dynamic = ["version"]
-[tool.maturin]
-bindings = "bin"
+
+[project.urls]
+homepage = "https://github.com/campbellmbrown/meu"
+source = "https://github.com/campbellmbrown/meu"
+issues = "https://github.com/campbellmbrown/meu/issues"
